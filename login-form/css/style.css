@@ -1,0 +1,87 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --primary-light-hsl: 200, 100%, 91%;
+    --primary-hsl: 200, 100%, 50%;
+    --primary-dark-hsl: 200, 100%, 6%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.full-screen-container {
+    align-items: center;
+    background: rgba(167, 209, 252, 0.5);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.login-container {
+    background: hsl(var(--primary-dark-hsl), .7);
+    border-radius: 2rem;
+    box-shadow: 0 0 1.5rem 0 hsl(var(--primary-dark-hsl), .7);
+    max-width: 60rem;
+    padding: 4rem 3rem;
+    width: 80%;
+}
+
+.login-title {
+    color: white;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.input-group label {
+    color: white;
+    font-weight: lighter;
+}
+
+.input-group input {
+    background: hsl(var(--primary-light-hsl), .3);
+    border-radius: .3rem;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: lighter;
+    outline: none;
+    padding: .5rem;
+}
+
+.input-group input:focus {
+    box-shadow: 0 0 0 1px hsl(var(--primary-hsl));
+}
+
+.login-button {
+    background: hsl(var(--primary-hsl), .25);
+    border-radius: .3rem;
+    border: 1px solid hsl(var(--primary-hsl));
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    outline: none;
+    padding: .5rem 1rem;
+}
+
+.login-button:hover,
+.login-button:focus {
+    background: hsl(var(--primary-hsl), .4);
+}

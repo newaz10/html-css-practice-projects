@@ -13,6 +13,7 @@
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    background: rgb(219, 209, 209);
   }
   
   .avatar {
@@ -24,6 +25,7 @@
     background-size: cover;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 0 7px rgb(44, 42, 42);
   }
   
   .avatar::before {
